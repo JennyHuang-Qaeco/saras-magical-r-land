@@ -7,7 +7,7 @@ octopus <- data.frame(oct_id = as.factor(1:500),
 write.csv(octopus, 'data/octopus_data.csv', row.names = FALSE)
 
 octopus <- read.csv('data/octopus_data.csv')
-
+ 
 
 #process data
 octopus$log_weight < - log(octopus$weight)
