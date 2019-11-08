@@ -13,11 +13,8 @@ octopus <- read.csv('data/octopus_data.csv')
 octopus$log_weight < - log(octopus$weight)
 
 #graphing
-png('figs/hist_apple_weight.png') #this opens up a png file open to editing. 
+png('figure/hist_octopus_weight.png') #this opens up a png file open to editing. 
 #this also switches the plotting device from the R default to the png
-hist(apple$weight)
+hist(octopus$weight, main = "Weight of blue-ring octopuses in VIC") 
+#Can edit file specification here
 dev.off() #this line closes off the temporary png plotting device
-
-
-
-#print image
